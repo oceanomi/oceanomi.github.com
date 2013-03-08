@@ -1,0 +1,15 @@
+---
+layout: default
+title: All bits in English
+language: english
+---
+
+{% for post in site.posts %}
+  {% if post.language == 'english' %}
+  <div id="container">
+    <a href="{{ post.url }}"> 
+      {{ post.content }}
+    </a>
+  </div> <!-- /#container -->
+  {% endif %}
+{% endfor %}

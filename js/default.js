@@ -2,24 +2,24 @@ $(document).ready(function(){
 
   $('img.tags').hover(
     function() {
-      $(this).attr({
+      $(this).hide().attr({
         src: 'images/cp-tag.png',
-        width: '100%',
+        width: '80%',
         height: '80%'
       }).css({
         top: '5%',
         left: '5%',
-      });
+      }).fadeIn(800);
     },
     function() {
-      $(this).attr({
+      $(this).hide().attr({
         src: 'images/cp-tag-small.png',
         width: '10%',
-        height: '20%'
+        height: '8%'
       }).css({
         top: '35%',
         left: '45%',
-    });
+    }).fadeIn(800);
   });
   //$("#test").hover(
   //  function () {

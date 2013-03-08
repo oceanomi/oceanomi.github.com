@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Carolina Podesta | {{ page.title }}</title>
+    <link rel="shortcut icon" type="image/png" href="images/letter.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/default.js"></script>
+  </head>
+  <body>
+    <div class="navigation">
+      {% if page.language != 'none' %}
+        <a href="index.html"><h4>Home</h4></a>
+      {% endif %}
+      {% if page.language != 'espanol' %}
+      <a href="todos.html"><h4>Leer<br/>Mas</h4></a>
+      {% endif %}
+      {% if page.language != 'english' %}
+        <a href="all.html"><h4>Read<br/>More</h4></a>
+      {% endif %}
+
+    </div>
+      <div class="footnote">
+        * intentos diarios de una novela.
+      </div>
+      <div class="footnote small">
+        * daily attempts at a novel.
+      </div>
+      <div class="contact">
+    <a href="mailto:carolina@carolinapodesta.com">
+    </a>
+      </div>
+        
+    <div class="text">  
+      {{ content }}
+    </div>
+    <!--
+      <img src="images/malevich.jpg"/>
+      <img class="tags" src="images/cp-tag-small.png" width="15%" height="12%" />
+      <div class="text">This is the sentence of the day. And this is the paragraph length version. And this is the paragraph length version. And this is the paragraph length version. And this is the paragraph length version. And this is the paragraph length version. And this is the paragraph length version. And this is the paragraph length version. And this is the paragraph length version.</div>
+      <a xlink:href="mailto:carolina@carolinapodesta.com"><text class="monospace" x="34%" y="20%">carolina@carolinapodesta.com</text></a>
+      <image xlink:href="images/cp-tag.png" x="0%" y="2%" width="100%" height="100%" />
+    <div class="svg-stamp">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="80%">
+      <rect id="outline" x="10%" y="10%" width="80%" height="80%" style="fill:white;stroke-width:3; stroke:black;opacity:1" /> 
+      <line x1="10%" y1="10%" x2="50%" y2="60%" style="stroke:#000600; stroke-width:3;"/>
+      <line x1="50%" y1="60%" x2="90%" y2="10%" style="stroke:#000008; stroke-width:3;"/>
+      <line x1="10%" y1="80%" x2="42%" y2="50%" style="stroke:#000600; stroke-width:3;"/>
+      <line x1="58%" y1="50%" x2="90%" y2="80%" style="stroke:#000008; stroke-width:3;"/>
+
+    </svg>
+    </div>
+    -->
+  </body>
+</html>

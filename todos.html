@@ -1,0 +1,15 @@
+---
+layout: default
+title: Todos en espanol
+language: espanol
+---
+
+{% for post in site.posts %}
+  {% if post.language == 'espanol' %}
+  <div id="container">
+    <a href="{{ post.url }}"> 
+      {{ post.content }}
+    </a>
+  </div> <!-- /#container -->
+  {% endif %}
+{% endfor %}
