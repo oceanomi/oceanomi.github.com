@@ -2,12 +2,9 @@
   font-family: monospace; font-size: 16px;
 }
 
-.text .espanol a {
-  color: #CC6699;
-}
-
-.text .english a {
-  color: #002EB8;
+@font-face {
+  font-family: "Nevis";
+  src: url("./nevis.ttf");
 }
 
 @font-face {
@@ -20,44 +17,77 @@
   src: url("./vtbullet.ttf");
 }
 
+/*    yellow    #b58900  3/3 yellow   136 #af8700 60  10  65 181 137   0  45 100  
+71
+    orange    #cb4b16  9/3 brred    166 #d75f00 50  50  55 203  75  22  18  89  80
+    red       #dc322f  1/1 red      160 #d70000 50  65  45 220  50  47   1  79  86
+    magenta   #d33682  5/5 magenta  125 #af005f 50  65 -05 211  54 130 331  74  83
+    violet    #6c71c4 13/5 brmagenta 61 #5f5faf 50  15 -45 108 113 196 237  45  77
+    blue      #268bd2  4/4 blue      33 #0087ff 55 -10 -45  38 139 210 205  82  82
+    cyan      #2aa198  6/6 cyan      37 #00afaf 60 -35 -05  42 161 152 175  74  63
+    green     #859900  2/2 green     64 #5f8700 60 -20  65 133 153   0  68 100  60
+*/
 
 .footnote {
   font-family: "vtbullet", "Helvetica", sans-serif;
   font-size: 80px;
-  padding: 0 140px;
+  padding: 2% 10% 0;
+  color: #222;
+  line-height: 70px;
+  /*background-color: #b58900;
+  background-color: #1ec1ac;*/
 }
 
 .footnote.small {
+  padding-top: 15px;
+  color: #b58900;
   font-size: 42px;
+  font-weight: 700;
 }
 
 .contact {
   font-family: "Castorgate", sans-serif;
   font-size: 162px;
-  width: 80px;
-  height: 80px;
+  width: 46px;
+  height: 46px;
   float: right;
 }
 
 .text {
-  font-family: monospace, "Remington", sans-serif;
+  background: url('../images/asterisk.png') no-repeat;
+  font-family: "Nevis", "Remington", sans-serif;
   font-size: 24px;
   position: absolute;
   top: 90%;
-  padding: 0 14%;
+  padding: 0 10%;
 }
 
 .text a {
-  color: #222;
+  font-weight: 200;
   text-decoration: none;
 }
 
+.text .espanol a {
+  color: #222;
+}
+
+.text .english a {
+  color: #002EB8;
+}
+
 .navigation {
-  position: fixed;
+  float: right;
+  /*position: fixed;*/
   font-family: "Castorgate", sans-serif;
-  font-size: 34px;
+  font-size: 18px;
+  line-height: 16px;
   text-transform: uppercase;
-  width: 6em;
+  width: 3em;
+}
+
+.nav-item {
+  padding-top: 20px;
+  font-weight: 700;
 }
 
 .contact a,
