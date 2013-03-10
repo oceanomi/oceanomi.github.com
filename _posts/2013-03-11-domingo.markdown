@@ -1,0 +1,6 @@
+---
+layout: post
+language: espanol
+---
+
+Es domingo y pruebo COMO FUNCIONA *esto* del _sitio_.¡A ver cómo anda! 
