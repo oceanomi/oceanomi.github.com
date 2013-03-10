@@ -57,8 +57,8 @@
   font-family: "Corbert", "Helvetica", sans-serif;
   font-size: 4.5em;
   position: absolute;
-  left: 6%;
-  top: 80%;
+  left: 4%;
+  top: 88%;
   width: 9%;
   color: #1ec1ac;
 }
@@ -68,7 +68,7 @@
   font-size: 1.5em;
   position: absolute;
   top: 90%;
-  padding: 0 10%;
+  margin: 0 10%;
 }
 
 .text a {
@@ -105,7 +105,7 @@
   font-family: "SFNewRepublic", "Castorgate", sans-serif;
   font-size: 1em;
   font-weight: 700;
-  line-height: 0.8em;
+  line-height: 1em;
   text-transform: uppercase;
   width: 3em;
 }
@@ -132,13 +132,13 @@
 }
 
 .nav-item {
-  padding-top: 1.5em;
+  padding-top: 1em;
   font-weight: 700;
 }
 
 .contact {
-  width: 2em;
-  height: 2em;
+  width: 2.8em;
+  height: 2.5em;
   float: left;
 }
 
