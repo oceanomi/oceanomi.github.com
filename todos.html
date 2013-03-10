@@ -6,10 +6,13 @@ language: espanol
 
 {% for post in site.posts %}
   {% if post.language == 'espanol' %}
-  <div id="container">
-    <a href="{{ post.url }}"> 
+  <div class="container">
+    <div class="espanol">
+      <div class="post-date">
+        {{ post.date | date: "%d %B %Y" }}
+      </div> <!-- /.post-date -->
       {{ post.content }}
-    </a>
-  </div> <!-- /#container -->
+    </div> <!-- /.espanol -->
+  </div> <!-- /.container -->
   {% endif %}
 {% endfor %}

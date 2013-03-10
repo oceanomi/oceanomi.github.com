@@ -1,15 +1,18 @@
-.monospace {
-  font-family: monospace; font-size: 16px;
+.body {
+  font-size: 60%;
+}
+
+/**
+ * Fonts.
+ */
+@font-face {
+  font-family: "SFNewRepublic";
+  src: url("./SFNewRepublic.ttf");
 }
 
 @font-face {
-  font-family: "Nevis";
-  src: url("./nevis.ttf");
-}
-
-@font-face {
-  font-family: "Castorgate";
-  src: url("./CASTOR__.ttf");
+  font-family: "Corbert";
+  src: url("./Corbert-Regular.otf");
 }
 
 @font-face {
@@ -17,46 +20,52 @@
   src: url("./vtbullet.ttf");
 }
 
-/*    yellow    #b58900  3/3 yellow   136 #af8700 60  10  65 181 137   0  45 100  
-71
-    orange    #cb4b16  9/3 brred    166 #d75f00 50  50  55 203  75  22  18  89  80
-    red       #dc322f  1/1 red      160 #d70000 50  65  45 220  50  47   1  79  86
-    magenta   #d33682  5/5 magenta  125 #af005f 50  65 -05 211  54 130 331  74  83
-    violet    #6c71c4 13/5 brmagenta 61 #5f5faf 50  15 -45 108 113 196 237  45  77
-    blue      #268bd2  4/4 blue      33 #0087ff 55 -10 -45  38 139 210 205  82  82
-    cyan      #2aa198  6/6 cyan      37 #00afaf 60 -35 -05  42 161 152 175  74  63
-    green     #859900  2/2 green     64 #5f8700 60 -20  65 133 153   0  68 100  60
+/*  yellow    #b58900  3/3 yellow   136 #af8700 
+    orange    #cb4b16  9/3 brred    166 #d75f00 
+    red       #dc322f  1/1 red      160 #d70000 
+    magenta   #d33682  5/5 magenta  125 #af005f 
+    violet    #6c71c4 13/5 brmagenta 61 #5f5faf 
+    blue      #268bd2  4/4 blue      33 #0087ff 
+    cyan      #2aa198  6/6 cyan      37 #00afaf 
+    green     #859900  2/2 green     64 #5f8700 
 */
 
+/**
+ * Footnote (the header).
+ */
 .footnote {
   font-family: "vtbullet", "Helvetica", sans-serif;
-  font-size: 80px;
+  font-size: 5em;
   padding: 2% 10% 0;
   color: #222;
-  line-height: 70px;
+  line-height: 1em;
   /*background-color: #b58900;
   background-color: #1ec1ac;*/
 }
 
 .footnote.small {
-  padding-top: 15px;
+  padding-top: 1%;
   color: #b58900;
-  font-size: 42px;
+  font-size: 2.5em;
   font-weight: 700;
 }
 
-.contact {
-  font-family: "Castorgate", sans-serif;
-  font-size: 162px;
-  width: 46px;
-  height: 46px;
-  float: right;
+/**
+ * Text area.
+ */
+.asterisk {
+  font-family: "Corbert", "Helvetica", sans-serif;
+  font-size: 4.5em;
+  position: absolute;
+  left: 6%;
+  top: 80%;
+  width: 9%;
+  color: #1ec1ac;
 }
 
 .text {
-  background: url('../images/asterisk.png') no-repeat;
-  font-family: "Nevis", "Remington", sans-serif;
-  font-size: 24px;
+  font-family: "Corbert", sans-serif;
+  font-size: 1.5em;
   position: absolute;
   top: 90%;
   padding: 0 10%;
@@ -72,33 +81,92 @@
 }
 
 .text .english a {
-  color: #002EB8;
+  color: #b58900;
+  /*color: #002EB8;*/
 }
 
+.text .container:after {
+  content: "___";
+}
+
+.post-date {
+  font-family: "SFNewRepublic", "Castorgate", sans-serif;
+  font-size: 0.5em;
+  color: #888;
+  float: right;
+}
+
+/**
+ * Navigation sidebar.
+ */
 .navigation {
   float: right;
   /*position: fixed;*/
-  font-family: "Castorgate", sans-serif;
-  font-size: 18px;
-  line-height: 16px;
+  font-family: "SFNewRepublic", "Castorgate", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 0.8em;
   text-transform: uppercase;
   width: 3em;
 }
 
-.nav-item {
-  padding-top: 20px;
-  font-weight: 700;
-}
-
-.contact a,
 .navigation a {
   text-decoration: none;
+  color: #1ec1ac;
+}
+
+.navigation a .english{
+  /*color: #1ec1ac;*/
+  color: #b58900;
+}
+
+.navigation a .espanol {
+  text-decoration: none;
+  /*color: #1ec1ac;*/
   color: #222;
 }
 
-.contact a:hover,
 .navigation a:hover {
   text-decoration: none;
   color: #888;
 }
 
+.nav-item {
+  padding-top: 1.5em;
+  font-weight: 700;
+}
+
+.contact {
+  width: 2em;
+  height: 2em;
+  float: left;
+}
+
+/**
+ * Not used.
+ *
+.square-asterisk {
+  font-size: 30px;
+  position: relative;
+  top: -44px;
+}
+
+.monospace {
+  font-family: monospace; font-size: 16px;
+}
+
+@font-face {
+  font-family: "Pseudo";
+  src: url("./Pseudo.ttf");
+}
+
+@font-face {
+  font-family: "Justus-Roman";
+  src: url("./Justus-Roman.ttf");
+}
+
+@font-face {
+  font-family: "Castorgate";
+  src: url("./CASTOR__.ttf");
+}
+*/

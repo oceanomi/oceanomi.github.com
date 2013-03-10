@@ -5,16 +5,14 @@ language: none
 ---
 
 {% for post in site.posts limit:1 %}
-  <div id="container">
+  <div class="container">
     {% if post.language == 'espanol' %}
     <div class="espanol">
     {% endif %}
     {% if post.language == 'english' %}
     <div class="english">
     {% endif %}
-    <a href="{{ post.url }}"> 
       {{ post.content }}
-    </a>
     </div> <!-- /.language -->
-  </div> <!-- /#container -->
+  </div> <!-- /.container -->
 {% endfor %}

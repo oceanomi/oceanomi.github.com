@@ -15,28 +15,25 @@
     </div>
     <div class="navigation">
       {% if page.language != 'none' %}
-        <a href="index.html"><div class="nav-item">Home</div></a>
+      <a href="index.html"><div class="nav-item"><span>Home</span></div></a>
       {% endif %}
       {% if page.language != 'espanol' %}
-      <a href="todos.html"><div class="nav-item">Leer<br/>Mas</div></a>
+      <a href="todos.html"><div class="nav-item espanol"><span>Leer<br/>M&aacute;s</span></div></a>
       {% endif %}
       {% if page.language != 'english' %}
-        <a href="all.html"><div class="nav-item">Read<br/>More</div></a>
+        <a href="all.html"><div class="nav-item english"><span>Read<br/>More</span></div></a>
       {% endif %}
 
     <div class="nav-item">
-      <img class="tags" src="images/cp-tag-small.png" width="80%" height="6%" />
-    </div>
-    <div class="nav-item">
       <div class="contact">
-    <a href="mailto:carolina@carolinapodesta.com" title="Write to me: carolina@carolinapodesta.com">
+    <a href="mailto:carolina@carolinapodesta.com" title="Escrib&iacute;me / Write to me: carolina@carolinapodesta.com">
     <div class="svg-stamp">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="80%">
-      <rect id="outline" x="10%" y="10%" width="80%" height="80%" style="fill:white;stroke-width:1; stroke:black;opacity:1" /> 
-      <line x1="10%" y1="10%" x2="50%" y2="60%" style="stroke:#000600; stroke-width:1;"/>
-      <line x1="50%" y1="60%" x2="90%" y2="10%" style="stroke:#000008; stroke-width:1;"/>
-      <line x1="10%" y1="80%" x2="42%" y2="50%" style="stroke:#000600; stroke-width:1;"/>
-      <line x1="58%" y1="50%" x2="90%" y2="80%" style="stroke:#000008; stroke-width:1;"/>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="98%" height="70%">
+      <rect id="outline" x="1%" y="1%" width="99%" height="99%" style="fill:white;stroke-width:2; stroke:#1ec1ac; opacity:1" /> 
+      <line x1="1%" y1="1%" x2="50%" y2="60%" style="stroke:#1ec1ac; stroke-width:2;"/>
+      <line x1="50%" y1="60%" x2="99%" y2="1%" style="stroke:#1ec1ac; stroke-width:2;"/>
+      <line x1="1%" y1="99%" x2="42%" y2="50%" style="stroke:#1ec1ac; stroke-width:2;"/>
+      <line x1="58%" y1="50%" x2="99%" y2="99%" style="stroke:#1ec1ac; stroke-width:2;"/>
 
     </svg>
     </div>
@@ -46,10 +43,16 @@
     </div>
 
         
+    <div class="asterisk">  
+      [*]
+    </div>
     <div class="text">  
       {{ content }}
     </div>
     <!--
+    <div class="nav-item">
+      <img class="tags" src="images/cp-tag-small.png" width="80%" height="6%" />
+    </div>
       <img src="images/malevich.jpg"/>
       <div class="text">This is the sentence of the day. And this is the paragraph length version. And this is the paragraph length version. And this is the paragraph length version. And this is the paragraph length version. And this is the paragraph length version. And this is the paragraph length version. And this is the paragraph length version. And this is the paragraph length version.</div>
       <a xlink:href="mailto:carolina@carolinapodesta.com"><text class="monospace" x="34%" y="20%">carolina@carolinapodesta.com</text></a>
